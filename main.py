@@ -204,58 +204,68 @@ def send_tenses_menu(message):
 
 # Har bir zamon uchun alohida buyruqlar
 @bot.message_handler(commands=['present_simple'])
-def p_simple(message): bot.send_message(message.chat.id, grammar_rules["present_simple"], parse_mode="HTML")
+def p_simple(message):
+    bot.send_message(message.chat.id, grammar_rules["present_simple"], parse_mode="HTML")
 
 
 @bot.message_handler(commands=['present_continuous'])
-def p_cont(message): bot.send_message(message.chat.id, grammar_rules["present_continuous"], parse_mode="HTML")
+def p_cont(message):
+    bot.send_message(message.chat.id, grammar_rules["present_continuous"], parse_mode="HTML")
 
 
 @bot.message_handler(commands=['present_perfect'])
-def p_perf(message): bot.send_message(message.chat.id, grammar_rules["present_perfect"], parse_mode="HTML")
+def p_perf(message):
+    bot.send_message(message.chat.id, grammar_rules["present_perfect"], parse_mode="HTML")
 
 
 @bot.message_handler(commands=['present_perfect_continuous'])
-def p_perf_cont(message): bot.send_message(message.chat.id, grammar_rules["present_perfect_continuous"],
-                                           parse_mode="HTML")
+def p_perf_cont(message):
+    bot.send_message(message.chat.id, grammar_rules["present_perfect_continuous"], parse_mode="HTML")
 
 
 @bot.message_handler(commands=['past_simple'])
-def past_simp(message): bot.send_message(message.chat.id, grammar_rules["past_simple"], parse_mode="HTML")
+def past_simp(message):
+    bot.send_message(message.chat.id, grammar_rules["past_simple"], parse_mode="HTML")
 
 
 @bot.message_handler(commands=['past_continuous'])
-def past_cont(message): bot.send_message(message.chat.id, grammar_rules["past_continuous"], parse_mode="HTML")
+def past_cont(message):
+    bot.send_message(message.chat.id, grammar_rules["past_continuous"], parse_mode="HTML")
 
 
 @bot.message_handler(commands=['past_perfect'])
-def past_perf(message): bot.send_message(message.chat.id, grammar_rules["past_perfect"], parse_mode="HTML")
+def past_perf(message):
+    bot.send_message(message.chat.id, grammar_rules["past_perfect"], parse_mode="HTML")
 
 
 @bot.message_handler(commands=['past_perfect_continuous'])
-def past_perf_cont(message): bot.send_message(message.chat.id, grammar_rules["past_perfect_continuous"],
-                                              parse_mode="HTML")
+def past_perf_cont(message):
+    bot.send_message(message.chat.id, grammar_rules["past_perfect_continuous"], parse_mode="HTML")
 
 
 @bot.message_handler(commands=['future_simple'])
-def fut_simp(message): bot.send_message(message.chat.id, grammar_rules["future_simple"], parse_mode="HTML")
+def fut_simp(message):
+    bot.send_message(message.chat.id, grammar_rules["future_simple"], parse_mode="HTML")
 
 
 @bot.message_handler(commands=['future_continuous'])
-def fut_cont(message): bot.send_message(message.chat.id, grammar_rules["future_continuous"], parse_mode="HTML")
+def fut_cont(message):
+    bot.send_message(message.chat.id, grammar_rules["future_continuous"], parse_mode="HTML")
 
 
 @bot.message_handler(commands=['future_perfect'])
-def fut_perf(message): bot.send_message(message.chat.id, grammar_rules["future_perfect"], parse_mode="HTML")
+def fut_perf(message):
+    bot.send_message(message.chat.id, grammar_rules["future_perfect"], parse_mode="HTML")
 
 
 @bot.message_handler(commands=['future_perfect_continuous'])
-def fut_perf_cont(message): bot.send_message(message.chat.id, grammar_rules["future_perfect_continuous"],
-                                             parse_mode="HTML")
+def fut_perf_cont(message):
+    bot.send_message(message.chat.id, grammar_rules["future_perfect_continuous"], parse_mode="HTML")
 
 
 @bot.message_handler(commands=['pronouns'])
-def pronouns(message): bot.send_message(message.chat.id, grammar_rules["pronouns"], parse_mode="HTML")
+def pronouns(message):
+    bot.send_message(message.chat.id, grammar_rules["pronouns"], parse_mode="HTML")
 
 
 # --- 4. GOOGLE TRANSLATE ORQALI AVTOMATIK TARJIMA QILISH ---
